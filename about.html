@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewels Store - About</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background: linear-gradient(to right, #fff0e6, #ffe6f0); text-align:center; padding:20px; }
+    nav { margin-bottom: 40px; }
+    nav a { margin: 0 15px; text-decoration:none; color:#b5651d; font-weight:bold; }
+    nav a:hover { color:#ffb84d; }
+    .container { background:white; padding:40px 30px; border-radius:15px; max-width:600px; margin:auto; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
+    h1 { font-size:2rem; color:#b5651d; margin-bottom:20px; }
+    p { font-size:1.1rem; line-height:1.6; color:#333; margin-bottom:25px; }
+    .btn { padding:12px 30px; background-color:#b5651d; color:white; border:none; border-radius:50px; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
+    .btn:hover { background-color:#ffb84d; color:#333; transform:translateY(-3px); }
+    @media(max-width:600px){ h1{font-size:1.6rem;} p{font-size:1rem;} }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="payment.html">Payment</a>
+  </nav>
+
+  <div class="container">
+    <h1>About Jewels Store</h1>
+    <p>At Jewels Store, we specialize in handcrafted jewelry that brings elegance and charm to every occasion. Our designs are a perfect blend of tradition and modern style.</p>
+    <p>We source the finest materials and ensure every piece reflects the highest quality craftsmanship. Whether it's a gift or a personal treat, our jewelry makes every moment special.</p>
+    <button class="btn" onclick="window.location.href='payment.html'">Go to Payment</button>
+  </div>
+
+</body>
+</html>
