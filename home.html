@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W40T88S2DF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W40T88S2DF');
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PTDQMBZ6');</script>
-<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Home Page</title>
+  <title>Jewels Store</title>
   <style>
-    /* Reset some default styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
+      height: 100vh;
+      background: linear-gradient(to right, #ffe6f0, #fff0e6);
       text-align: center;
+      padding: 20px;
     }
 
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
+    .home-container {
+      background: white;
+      padding: 40px 30px;
       border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 500px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      font-size: 2.2rem;
+      color: #b5651d;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 1.1rem;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+      color: #333;
     }
 
     .btn {
-      background-color: #ffffff;
-      color: #2575fc;
-      border: none;
       padding: 12px 30px;
-      font-size: 1rem;
+      background-color: #b5651d;
+      color: white;
+      border: none;
       border-radius: 50px;
+      font-size: 1rem;
       cursor: pointer;
       transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .btn:hover {
-      background-color: #2575fc;
-      color: white;
+      background-color: #ffb84d;
+      color: #333;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    @media(max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTDQMBZ6"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-  <div class="container">
-    <h1>Welcome to Our Website</h1>
-    <p>Discover amazing things with us. Click the button below to know more!</p>
+  <div class="home-container">
+    <h1>Welcome to Our Jewels Store</h1>
+    <p>Discover our beautiful collection of jewelry, crafted to perfection to bring elegance and charm to every moment.</p>
     <button class="btn" onclick="knowMore()">Know More</button>
   </div>
 
   <script>
     function knowMore() {
-      window.location.href = "#"; // You can replace # with your actual page URL
-      alert("Thank you for clicking! You can redirect to another page here.");
+      window.location.href = "#"; // Replace # with actual page URL
+      alert("Redirecting to more details!");
     }
   </script>
 
