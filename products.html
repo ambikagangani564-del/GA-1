@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewels Store - Products</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background: linear-gradient(to right, #fff0e6, #ffe6f0); padding:20px; text-align:center; }
+    nav { margin-bottom: 40px; }
+    nav a { margin: 0 15px; text-decoration:none; color:#b5651d; font-weight:bold; }
+    nav a:hover { color:#ffb84d; }
+    .container { background:white; padding:40px 30px; border-radius:15px; max-width:700px; margin:auto; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
+    h1 { font-size:2rem; color:#b5651d; margin-bottom:20px; }
+    p { font-size:1.1rem; line-height:1.6; margin-bottom:20px; color:#333; }
+    ul { text-align:left; margin:20px 0; padding-left:20px; }
+    li { margin-bottom:10px; }
+    .btn { padding:12px 30px; background-color:#b5651d; color:white; border:none; border-radius:50px; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
+    .btn:hover { background-color:#ffb84d; color:#333; transform:translateY(-3px); }
+    @media(max-width:600px){ h1{font-size:1.6rem;} p, li{font-size:1rem;} }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="payment.html">Payment</a>
+  </nav>
+
+  <div class="container">
+    <h1>Our Exquisite Jewelry Collection</h1>
+    <p>Explore our collection of beautifully crafted jewelry, perfect for every occasion.</p>
+
+    <ul>
+      <li><strong>Necklaces:</strong> Elegant designs using gold, silver, and precious stones.</li>
+      <li><strong>Rings:</strong> Engagement, wedding, and fashion rings crafted with precision.</li>
+      <li><strong>Earrings:</strong> Stunning earrings that complement your style for any event.</li>
+      <li><strong>Bracelets:</strong> Classic and modern bracelets for daily wear or special moments.</li>
+      <li><strong>Customized Jewelry:</strong> Personalized pieces designed according to your wishes.</li>
+    </ul>
+
+    <p>Experience the charm of jewelry that reflects your personality and elegance.</p>
+    <button class="btn" onclick="window.location.href='payment.html'">Buy Now / Payment</button>
+  </div>
+
+</body>
+</html>
