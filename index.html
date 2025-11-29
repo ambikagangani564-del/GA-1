@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewels Store - Home</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background: linear-gradient(to right, #ffe6f0, #fff0e6); text-align:center; padding:20px; }
+    nav { margin-bottom: 40px; }
+    nav a { margin: 0 15px; text-decoration:none; color:#b5651d; font-weight:bold; }
+    nav a:hover { color:#ffb84d; }
+    .container { background:white; padding:40px 30px; border-radius:15px; max-width:500px; margin:auto; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
+    h1 { font-size:2.2rem; color:#b5651d; margin-bottom:15px; }
+    p { font-size:1.1rem; margin-bottom:25px; line-height:1.5; color:#333; }
+    .btn { padding:12px 30px; background-color:#b5651d; color:white; border:none; border-radius:50px; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
+    .btn:hover { background-color:#ffb84d; color:#333; transform:translateY(-3px); }
+    @media(max-width:600px){ h1{font-size:1.8rem;} p{font-size:1rem;} }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="payment.html">Payment</a>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Our Jewels Store</h1>
+    <p>Discover our beautiful collection of jewelry, crafted to perfection to bring elegance and charm to every moment.</p>
+    <button class="btn" onclick="window.location.href='about.html'">Know More</button>
+  </div>
+
+</body>
+</html>
