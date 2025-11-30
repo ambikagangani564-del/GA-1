@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W40T88S2DF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W40T88S2DF');
-</script>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PTDQMBZ6');</script>
-<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jewels Store - About</title>
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
-    body { background: linear-gradient(to right, #fff0e6, #ffe6f0); text-align:center; padding:20px; }
-    nav { margin-bottom: 40px; }
-    nav a { margin: 0 15px; text-decoration:none; color:#b5651d; font-weight:bold; }
-    nav a:hover { color:#ffb84d; }
-    .container { background:white; padding:40px 30px; border-radius:15px; max-width:600px; margin:auto; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
-    h1 { font-size:2rem; color:#b5651d; margin-bottom:20px; }
-    p { font-size:1.1rem; line-height:1.6; color:#333; margin-bottom:25px; }
-    .btn { padding:12px 30px; background-color:#b5651d; color:white; border:none; border-radius:50px; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
-    .btn:hover { background-color:#ffb84d; color:#333; transform:translateY(-3px); }
-    @media(max-width:600px){ h1{font-size:1.6rem;} p{font-size:1rem;} }
-  </style>
+  <title>Jewel Store - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTDQMBZ6"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
+<header>
+  <h1>Jewel Store</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="payment.html">Payment</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="payment.html">Payment</a>
   </nav>
+</header>
 
-  <div class="container">
-    <h1>About Jewels Store</h1>
-    <p>At Jewels Store, we specialize in handcrafted jewelry that brings elegance and charm to every occasion. Our designs are a perfect blend of tradition and modern style.</p>
-    <p>We source the finest materials and ensure every piece reflects the highest quality craftsmanship. Whether it's a gift or a personal treat, our jewelry makes every moment special.</p>
-    <button class="btn" onclick="window.location.href='payment.html'">Go to Payment</button>
+<section class="hero">
+  <h2>Shine with Elegance</h2>
+  <p>Explore premium gold, silver, and diamond jewellery.</p>
+  <button onclick="goToPayment()">Shop Now</button>
+</section>
+
+<section class="products">
+  <h2>Our Collection</h2>
+
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Ring">
+      <p>Gold Ring - ₹4999</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Necklace">
+      <p>Diamond Necklace - ₹15999</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Bracelet">
+      <p>Silver Bracelet - ₹2999</p>
+    </div>
   </div>
+</section>
 
+<script src="js/script.js"></script>
 </body>
 </html>
