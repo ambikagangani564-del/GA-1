@@ -1,51 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jewels Store - Payment</title>
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
-    body { background: linear-gradient(to right, #ffe6f0, #fff0e6); text-align:center; padding:20px; }
-    nav { margin-bottom: 40px; }
-    nav a { margin: 0 15px; text-decoration:none; color:#b5651d; font-weight:bold; }
-    nav a:hover { color:#ffb84d; }
-    .container { background:white; padding:40px 30px; border-radius:15px; max-width:500px; margin:auto; box-shadow:0 10px 25px rgba(0,0,0,0.1); }
-    h1 { font-size:2rem; color:#b5651d; margin-bottom:20px; }
-    form { display:flex; flex-direction:column; }
-    input { padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; font-size:1rem; }
-    .btn { padding:12px 30px; background-color:#b5651d; color:white; border:none; border-radius:50px; font-size:1rem; cursor:pointer; transition:all 0.3s ease; }
-    .btn:hover { background-color:#ffb84d; color:#333; transform:translateY(-3px); }
-    @media(max-width:600px){ h1{font-size:1.6rem;} input{font-size:0.9rem;} }
-  </style>
+  <title>Payment - Jewel Store</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
+<header>
+  <h1>Payment</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="payment.html">Payment</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="payment.html">Payment</a>
   </nav>
+</header>
 
-  <div class="container">
-    <h1>Payment Details</h1>
-    <form onsubmit="paymentSuccess(event)">
+<section class="payment-box">
+  <h2>Complete Your Payment</h2>
+
+  <form id="paymentForm">
       <input type="text" placeholder="Full Name" required>
       <input type="email" placeholder="Email" required>
       <input type="number" placeholder="Card Number" required>
-      <input type="text" placeholder="Expiry Date (MM/YY)" required>
-      <input type="text" placeholder="CVV" required>
-      <button class="btn" type="submit">Pay Now</button>
-    </form>
-  </div>
+      <button type="submit">Pay Now</button>
+  </form>
 
-  <script>
-    function paymentSuccess(e){
-      e.preventDefault();
-      alert("Thank you! Your payment is successful.");
-      window.location.href = "index.html";
-    }
-  </script>
+  <p id="msg"></p>
+</section>
 
+<script src="js/script.js"></script>
 </body>
 </html>
